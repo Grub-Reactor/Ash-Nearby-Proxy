@@ -1,5 +1,5 @@
 const express = require('express');
-const port = 3000;
+const port = process.env.PORT || 3000;
 const app = express();
 const httpProxy = require('http-proxy');
 const apiProxy = httpProxy.createProxyServer();
@@ -10,10 +10,10 @@ const serverFour = 'http://localhost:3002';
 
 app.use(express.static('public'));
 
-// app.use('/', proxy('http://localhost:3004/'));
-// app.use('/', proxy('http://localhost:3001/grub-reactor/:id'));
+// const restaurantId = window.location.pathname.split('/')[2];
+// const url = `/grub-reactor/${restaurantId}/menu/`;
 
-app.all('/grub-reactor/:id/menu', function(req, res) {
+app.all('/grub-reactor/4/menu', function(req, res) {
   console.log('redirecting to Server1');
   apiProxy.web(req, res, {target: serverOne});
 });
@@ -28,7 +28,7 @@ app.all("/restaurants/banners/:rest_id", function(req, res) {
   apiProxy.web(req, res, {target: serverThree});
 });
 
-app.all("/restaurants/:restaurantID/", function(req, res) {
+app.all("/:restaurantID/allreviews/reviews/*", function(req, res) {
   console.log('redirecting to Server4');
   apiProxy.web(req, res, {target: serverFour});
 });
