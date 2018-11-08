@@ -8,12 +8,14 @@ const serverTwo = 'http://localhost:3004';
 const serverThree = 'http://localhost:3005';
 const serverFour = 'http://localhost:3002';
 
+const restaurantId = window.location.pathname.split('/')[1];
+
 app.use(express.static('public'));
 
 // const restaurantId = window.location.pathname.split('/')[2];
 // const url = `/grub-reactor/${restaurantId}/menu/`;
 
-app.all('/grub-reactor/4/menu', function(req, res) {
+app.all('/grub-reactor/:id/menu', function(req, res) {
   console.log('redirecting to Server1');
   apiProxy.web(req, res, {target: serverOne});
 });
