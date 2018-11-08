@@ -1,0 +1,63 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 3vw;
+  grid-template-areas: 
+    "header"
+    "sidebar"
+    "banner"
+    "menu"
+    "carousel"
+    "reviews";
+}
+
+.header {
+  grid-area: header;
+  grid-column: 1 / span 2;
+  
+}
+
+.grub-bar {
+  max-height: 100%;
+  max-width: 100%;
+  z-index: 1000;
+}
+
+.aside-bar {
+  grid-area: sidebar;
+  grid-column: 2;
+  width: 100%;
+  z-index: 1000;
+  /* box-shadow: -5px 0px 5px -5px #aaaaaa */
+  /* box-shadow: -1px 0 gray, 6px 0 white, -7px 0px 5px -2px gray; */
+
+}
+
+.aside {
+  position: absolute;
+  width: 23.5%
+}
+
+.top-body {
+  grid-area: banner;
+}
+
+.body {
+  grid-area: menu;
+}
+
+.lower-body {
+  grid-area: carousel;
+}
+
+.foot {
+  grid-area: reviews;
+}
+
+button {
+  visibility: hidden;
+}
+
+
+
+
