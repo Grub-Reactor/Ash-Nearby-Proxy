@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" 
-  integrity=s"sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" 
+  integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" 
   crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
   <meta charset="UTF-8">
   <title>Actually Grubhub</title>
 </head>
 <body>
-  <div id="main"></div>
-  <br />
-  <div id="carousel"></div>
-  <br/>
-  <div id="app"></div>
+  <div class="wrapper">
+    <div class="header">
+      <img class="grub-bar" src="Topbanner.png">
+    </div>
+    <div class="aside-bar">
+      <img class="aside" src="Sidebar.png">
+    </div>
+    <div class="top-body">
+      <div name="banner" id="main"></div>
+    </div>
+    <div class="body">
+      <div id="app"></div>
+    </div>
+    <div class="lower-body">
+      <div id="carousel"></div>
+    </div>
+    <div class="foot">
+      <div id="reviews"></div>
+    </div>
+  </div>
 </body>
-<script src="http://localhost:3004/bundle.js"></script>
-<!-- <script src="https://s3-us-west-1.amazonaws.com/proxy-server-grubreactor/bundle.js"></script> -->
-<script src="http://localhost:3005/bundle.js"></script>
-<script src="http://localhost:3002/bundle.js"></script>
 
+<script src="https://s3-us-west-1.amazonaws.com/grub-reactor/Bannerbundle.js"></script>
+<script src="https://s3-us-west-1.amazonaws.com/grub-reactor/Menubundle.js"></script>
+<script src="https://s3-us-west-1.amazonaws.com/grub-reactor/Nearbybundle.js"></script>
+<script src="https://s3-us-west-1.amazonaws.com/grub-reactor/Reviewbundle.js"></script>
 
 </html>
