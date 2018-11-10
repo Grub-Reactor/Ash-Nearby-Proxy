@@ -1,3 +1,5 @@
+
+
 .wrapper {
   display: grid;
   grid-template-columns: 75% 25%;
@@ -29,13 +31,13 @@
   width: 100%;
   z-index: 1000;
   /* box-shadow: -5px 0px 5px -5px #aaaaaa */
-  /* box-shadow: -1px 0 gray, 6px 0 white, -7px 0px 5px -2px gray; */
 
 }
 
 .aside {
   position: absolute;
   width: 23.5%
+
 }
 
 .top-body {
@@ -48,16 +50,41 @@
 
 .lower-body {
   grid-area: carousel;
+  background-color: #efefef;
+
 }
 
 .foot {
   grid-area: reviews;
+  background-color: #efefef;
+
 }
+
 
 button {
   visibility: hidden;
 }
 
+.priceTag1 {
+  width: 235px !important;
+  height: 90px !important;
+  left: 426px !important;
+  top: 283px !important;
 
+}
 
+.price {
+  right: 7px !important;
+  top: 6px !important;
+  background-color: #faebd7b8 !important;
+  border-radius: 10% !important;
+}
+
+.contactview {
+  margin-left: 150px !important;
+}
+
+.md {
+  height: 201px !important;
+}
 
