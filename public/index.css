@@ -1,3 +1,5 @@
+
+
 .wrapper {
   display: grid;
   grid-template-columns: 75% 25%;
@@ -18,9 +20,12 @@
 }
 
 .grub-bar {
-  max-height: 100%;
-  max-width: 100%;
-  z-index: 1000;
+  max-height: 100% !important;
+  max-width: 100% !important;
+  z-index: 1000 !important;
+  height: 100% !important;
+  width: 100% !important;
+
 }
 
 .aside-bar {
@@ -28,14 +33,15 @@
   grid-column: 2;
   width: 100%;
   z-index: 1000;
-  /* box-shadow: -5px 0px 5px -5px #aaaaaa */
-  /* box-shadow: -1px 0 gray, 6px 0 white, -7px 0px 5px -2px gray; */
 
 }
 
 .aside {
-  position: absolute;
-  width: 23.5%
+  display: fixed !important;
+  height: 100% !important;
+  position: absolute !important;
+  width: 23.5% !important;
+
 }
 
 .top-body {
@@ -48,16 +54,32 @@
 
 .lower-body {
   grid-area: carousel;
+  background-color: #efefef;
+
 }
 
 .foot {
   grid-area: reviews;
+  background-color: #efefef;
+
 }
 
-button {
-  visibility: hidden;
+
+.price {
+  right: 7px !important;
+  top: 6px !important;
+  background-color: #faebd7b8 !important;
+  border-radius: 10% !important;
+}
+
+.contactview {
+  margin-left: 150px !important;
 }
 
 
 
-
+.logoview {
+  float: left !important;
+  height: 175px !important;
+  width: 175px !important;
+}
