@@ -1,3 +1,5 @@
+
+
 .wrapper {
   display: grid;
   grid-template-columns: 75% 25%;
@@ -14,6 +16,7 @@
 .header {
   grid-area: header;
   grid-column: 1 / span 2;
+  
 }
 
 .grub-bar {
@@ -22,6 +25,7 @@
   z-index: 1000 !important;
   height: 100% !important;
   width: 100% !important;
+
 }
 
 .aside-bar {
@@ -29,6 +33,7 @@
   grid-column: 2;
   width: 100%;
   z-index: 1000;
+
 }
 
 .aside {
@@ -36,6 +41,7 @@
   height: 100% !important;
   position: absolute !important;
   width: 23.5% !important;
+
 }
 
 .top-body {
@@ -49,12 +55,15 @@
 .lower-body {
   grid-area: carousel;
   background-color: #efefef;
+
 }
 
 .foot {
   grid-area: reviews;
   background-color: #efefef;
+
 }
+
 
 .price {
   right: 7px !important;
@@ -67,18 +76,10 @@
   margin-left: 150px !important;
 }
 
+
+
 .logoview {
   float: left !important;
   height: 175px !important;
   width: 175px !important;
-}
-
-.popover__content {
-  left: auto !important;
-  top: auto !important;
-  margin-left: auto !important;
-  position: absolute !important;
-  padding: 1.5em !important;
-  transition: translate(0, -20px) !important;
-  transition-duration: 0.2s !important;
 }
