@@ -17,6 +17,7 @@
     "request": "^2.88.0"
   },
   "devDependencies": {
+    "nodemon": "^1.18.9"
   },
   "version": "1.0.0",
   "main": "public/index.html",
