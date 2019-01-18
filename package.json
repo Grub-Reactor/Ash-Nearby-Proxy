@@ -6,6 +6,12 @@
   "engines": {
     "node": ">=6.13.0"
   },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "nodemon": "^1.18.9"
+  }
   "scripts": {
     "start": "node ./server/server.js",
     "nodemon": "nodemon ./server/server.js"
